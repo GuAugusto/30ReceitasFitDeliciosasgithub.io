@@ -3,47 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>30 Receitas Fit Deliciosas - Emagreça Comendo Gostoso</title>
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Emagreça até 5kg em 30 dias com receitas deliciosas, práticas e econômicas. Sem passar fome, sem sofrimento!">
-    <meta name="keywords" content="receitas fit, emagrecer, dieta saudável, perder peso, receitas saudáveis">
-    
-    <!-- Facebook Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'SEU_PIXEL_ID_AQUI');
-    fbq('track', 'PageView');
-    </script>
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'GA_TRACKING_ID');
-    </script>
-    
-    <!-- Hotmart Pixel -->
-    <script>
-    (function(h,o,t,m,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:SEU_ID_HOTMART,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    </script>
-
+    <title>Por Um - Ministério de Jovens</title>
     <style>
         * {
             margin: 0;
@@ -52,1489 +12,753 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', sans-serif;
             overflow-x: hidden;
+            background: #FAFBFC;
+            color: #2D3748;
+            line-height: 1.7;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Email Popup Modal */
-        .email-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.8);
-            z-index: 10000;
-            align-items: center;
-            justify-content: center;
-            animation: fadeIn 0.3s;
-        }
-
-        .email-popup.active {
-            display: flex;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        .popup-content {
-            background: white;
-            padding: 50px;
-            border-radius: 20px;
-            max-width: 600px;
-            position: relative;
-            text-align: center;
-            animation: slideUp 0.5s;
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(100px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        .popup-close {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            font-size: 30px;
-            cursor: pointer;
-            color: #999;
-            transition: color 0.3s;
-        }
-
-        .popup-close:hover {
-            color: #333;
-        }
-
-        .popup-content h3 {
-            font-size: 2em;
-            color: #667eea;
-            margin-bottom: 20px;
-        }
-
-        .popup-content p {
-            font-size: 1.1em;
-            margin-bottom: 30px;
-            color: #666;
-        }
-
-        .email-form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .email-form input {
-            padding: 15px;
-            font-size: 1em;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            transition: border 0.3s;
-        }
-
-        .email-form input:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        .email-form button {
-            padding: 18px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border: none;
-            border-radius: 10px;
-            font-size: 1.1em;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .email-form button:hover {
-            transform: scale(1.05);
-        }
-
-        .popup-bonus {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* Exit Intent Popup */
-        .exit-popup {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.9);
-            z-index: 10001;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .exit-popup.active {
-            display: flex;
-        }
-
-        .exit-content {
-            background: linear-gradient(135deg, #FF6B6B 0%, #FF5252 100%);
-            color: white;
-            padding: 50px;
-            border-radius: 20px;
-            max-width: 600px;
-            text-align: center;
-            position: relative;
-        }
-
-        .exit-content h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .exit-content .discount {
-            font-size: 3em;
-            font-weight: bold;
-            color: #FFD700;
-            margin: 20px 0;
-        }
-
-        /* WhatsApp Group Notification */
-        .whatsapp-notification {
-            position: fixed;
-            bottom: 100px;
-            right: 20px;
-            background: #25D366;
-            color: white;
-            padding: 20px 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
-            z-index: 999;
-            cursor: pointer;
-            transition: transform 0.3s;
-            display: none;
-            max-width: 300px;
-        }
-
-        .whatsapp-notification.show {
-            display: block;
-            animation: slideInRight 0.5s;
-        }
-
-        @keyframes slideInRight {
-            from { transform: translateX(400px); }
-            to { transform: translateX(0); }
-        }
-
-        .whatsapp-notification:hover {
-            transform: scale(1.05);
-        }
-
-        .whatsapp-close {
-            position: absolute;
-            top: 5px;
-            right: 10px;
-            cursor: pointer;
-            font-size: 20px;
-        }
-
-        /* A/B Test Elements */
-        .ab-test-headline {
-            display: none;
-        }
-
-        .ab-test-headline.active {
-            display: block;
-        }
-
-        /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 80px 20px 60px;
-            text-align: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #FFF2A8 0%, #FFE074 50%, #FFC94D 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             position: relative;
+            border-bottom: 1px solid #FFB300;
             overflow: hidden;
         }
 
         .hero::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
-            opacity: 0.3;
+            width: 100%;
+            height: 100%;
+            background: 
+                radial-gradient(circle at 20% 50%, rgba(255, 179, 0, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(255, 152, 0, 0.15) 0%, transparent 50%);
+            animation: gradientShift 10s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 0.8; }
         }
 
         .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #FFD700;
-            color: #333;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 20px;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.3em;
-            margin-bottom: 30px;
-            opacity: 0.95;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #FF6B6B;
-            color: white;
-            padding: 20px 50px;
-            text-decoration: none;
-            border-radius: 50px;
-            font-size: 1.3em;
-            font-weight: bold;
-            transition: all 0.3s;
-            box-shadow: 0 10px 30px rgba(255,107,107,0.4);
-            cursor: pointer;
-            border: none;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
-            40% { transform: translateY(-10px); }
-            60% { transform: translateY(-5px); }
-        }
-
-        .cta-button:hover {
-            background: #ff5252;
-            transform: scale(1.05);
-            box-shadow: 0 15px 40px rgba(255,107,107,0.6);
-        }
-
-        .guarantee {
-            margin-top: 20px;
-            font-size: 0.9em;
-            opacity: 0.9;
-        }
-
-        /* Social Proof Bar */
-        .social-proof-bar {
-            background: #2ecc71;
-            color: white;
-            padding: 15px 20px;
             text-align: center;
-            font-weight: bold;
-            position: sticky;
-            top: 0;
-            z-index: 998;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-
-        /* Problem Section */
-        .problem {
-            background: #f8f9fa;
-            padding: 60px 20px;
-        }
-
-        .problem h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #333;
-        }
-
-        .problem-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .problem-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            text-align: center;
-            transition: transform 0.3s;
-        }
-
-        .problem-card:hover {
-            transform: translateY(-10px);
-        }
-
-        .problem-icon {
-            font-size: 3em;
-            margin-bottom: 15px;
-        }
-
-        /* Solution Section */
-        .solution {
-            padding: 60px 20px;
-            background: white;
-        }
-
-        .solution h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #667eea;
-        }
-
-        .solution-subtitle {
-            text-align: center;
-            font-size: 1.2em;
-            color: #666;
-            margin-bottom: 50px;
-        }
-
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .benefit-card {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 30px;
-            border-radius: 15px;
-            border-left: 5px solid #667eea;
-        }
-
-        .benefit-card h3 {
-            color: #667eea;
-            margin-bottom: 15px;
-            font-size: 1.3em;
-        }
-
-        /* Results Section */
-        .results {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .results h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-top: 40px;
-        }
-
-        .stat-card {
-            background: rgba(255,255,255,0.1);
-            padding: 30px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-        }
-
-        .stat-number {
-            font-size: 3em;
-            font-weight: bold;
-            color: #FFD700;
-        }
-
-        /* Video Section */
-        .video-section {
-            background: #f8f9fa;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .video-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 30px;
-            color: #333;
-        }
-
-        .video-container {
-            max-width: 800px;
-            margin: 0 auto;
-            position: relative;
-            padding-bottom: 56.25%;
-            height: 0;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
-        }
-
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Bonus Section */
-        .bonus {
-            background: #fff;
-            padding: 60px 20px;
-        }
-
-        .bonus h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-            color: #FF6B6B;
-        }
-
-        .bonus-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .bonus-card {
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(255,215,0,0.3);
-            color: #333;
-        }
-
-        .bonus-card h3 {
-            font-size: 1.5em;
-            margin-bottom: 15px;
-        }
-
-        /* Community Section */
-        .community {
-            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .community h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .community-benefits {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin: 40px 0;
+            z-index: 2;
+            padding: 3rem;
             max-width: 900px;
+        }
+
+        .logo-transition {
+            margin-bottom: 3rem;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .old-name {
+            font-size: 2rem;
+            font-weight: 300;
+            letter-spacing: 8px;
+            opacity: 0;
+            animation: fadeIn 1s forwards;
+            color: rgba(66, 66, 66, 0.5);
+        }
+
+        .transition-line {
+            width: 100px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #FFB300, transparent);
+            margin: 1.5rem auto;
+            opacity: 0;
+            animation: fadeIn 1s 1s forwards, glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 0 5px #FFB300; }
+            50% { box-shadow: 0 0 20px #FFB300; }
+        }
+
+        .new-name {
+            font-size: 5rem;
+            font-weight: 700;
+            letter-spacing: 12px;
+            opacity: 0;
+            animation: fadeIn 1.5s 1.5s forwards;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            background: linear-gradient(135deg, #FFB300 0%, #FF6F00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            opacity: 0;
+            animation: fadeIn 1s 2.5s forwards;
+            letter-spacing: 2px;
+            color: #424242;
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            opacity: 0;
+            animation: fadeIn 1s 3s forwards;
+            color: rgba(66, 66, 66, 0.85);
+            max-width: 700px;
             margin-left: auto;
             margin-right: auto;
+            font-weight: 300;
         }
 
-        .community-benefit {
-            background: rgba(255,255,255,0.1);
-            padding: 25px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
+        .hero-verse {
+            font-style: italic;
+            font-size: 1rem;
+            opacity: 0;
+            animation: fadeIn 1s 3.5s forwards;
+            color: rgba(66, 66, 66, 0.75);
+            border-left: 2px solid #FFB300;
+            padding-left: 1.5rem;
+            margin: 2rem auto;
+            max-width: 600px;
+            text-align: left;
+            font-weight: 300;
         }
 
-        .community-benefit h3 {
-            font-size: 1.3em;
-            margin-bottom: 10px;
+        @keyframes fadeIn {
+            to { opacity: 1; }
         }
 
-        /* Testimonials */
-        .testimonials {
-            background: #f8f9fa;
-            padding: 60px 20px;
+        section {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
-        .testimonials h2 {
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .section-divider {
+            width: 80px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #FFB300, transparent);
+            margin: 2rem 0;
+        }
+
+        .manifesto-section {
+            background: #F5F5F5;
+            border-top: 1px solid rgba(255, 179, 0, 0.2);
+        }
+
+        .manifesto-intro {
             text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
+            margin-bottom: 4rem;
         }
 
-        .testimonial-grid {
+        .manifesto-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
+            gap: 1px;
+            background: rgba(255, 179, 0, 0.15);
+            border: 1px solid rgba(255, 179, 0, 0.25);
         }
 
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            position: relative;
+        .manifesto-item {
+            padding: 3rem 2rem;
+            background: #FFFFFF;
+            transition: background 0.3s, transform 0.3s;
         }
 
-        .testimonial-stars {
-            color: #FFD700;
-            font-size: 1.5em;
-            margin-bottom: 15px;
+        .manifesto-item:hover {
+            background: rgba(255, 179, 0, 0.05);
+            transform: translateY(-2px);
         }
 
-        .testimonial-name {
-            font-weight: bold;
-            color: #667eea;
-            margin-top: 15px;
+        .manifesto-number {
+            font-size: 3rem;
+            color: #FFB300;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            font-family: 'Courier New', monospace;
         }
 
-        .testimonial-verified {
-            color: #2ecc71;
-            font-size: 0.9em;
-            margin-top: 5px;
+        .manifesto-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.5px;
+            color: #424242;
+            font-weight: 600;
         }
 
-        /* Urgency Section */
-        .urgency {
-            background: #FF6B6B;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
+        .manifesto-text {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: rgba(66, 66, 66, 0.85);
+            font-weight: 300;
         }
 
-        .countdown {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin-top: 30px;
-            flex-wrap: wrap;
+        .significance-section {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFF3CC 100%);
+            border-top: 1px solid rgba(255, 179, 0, 0.3);
         }
 
-        .countdown-item {
-            background: rgba(255,255,255,0.2);
-            padding: 20px 30px;
-            border-radius: 10px;
-            backdrop-filter: blur(10px);
-        }
-
-        .countdown-number {
-            font-size: 3em;
-            font-weight: bold;
-        }
-
-        .countdown-label {
-            font-size: 0.9em;
-            opacity: 0.9;
-        }
-
-        /* Pricing Section */
-        .pricing {
-            background: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .pricing h2 {
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .price-card {
-            max-width: 500px;
-            margin: 0 auto;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(102,126,234,0.3);
-        }
-
-        .price-old {
-            text-decoration: line-through;
-            font-size: 1.5em;
-            opacity: 0.7;
-        }
-
-        .price-new {
-            font-size: 4em;
-            font-weight: bold;
-            color: #FFD700;
-            margin: 20px 0;
-        }
-
-        .price-installments {
-            font-size: 1.2em;
-            margin-bottom: 30px;
-        }
-
-        /* FAQ Section */
-        .faq {
-            background: #f8f9fa;
-            padding: 60px 20px;
-        }
-
-        .faq h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 40px;
-        }
-
-        .faq-container {
+        .significance-content {
             max-width: 800px;
             margin: 0 auto;
         }
 
-        .faq-item {
-            background: white;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        .significance-block {
+            margin-bottom: 3rem;
+            padding: 2rem;
+            border-left: 2px solid #FFB300;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 4px;
         }
 
-        .faq-question {
-            padding: 20px;
-            cursor: pointer;
-            font-weight: bold;
-            background: #667eea;
-            color: white;
-            transition: background 0.3s;
+        .significance-block h3 {
+            color: #F57C00;
+            margin-bottom: 1rem;
+            font-weight: 500;
         }
 
-        .faq-question:hover {
-            background: #5568d3;
+        .significance-block p {
+            color: #424242;
         }
 
-        .faq-answer {
-            padding: 20px;
-            display: none;
+        .verse-block {
+            background: rgba(255, 152, 0, 0.08);
+            padding: 2rem;
+            margin: 3rem 0;
+            border-left: 2px solid #FF6F00;
+            font-style: italic;
+            border-radius: 4px;
         }
 
-        .faq-answer.active {
-            display: block;
+        .verse-text {
+            font-size: 1.2rem;
+            line-height: 1.9;
+            margin-bottom: 1rem;
+            font-weight: 300;
+            color: #424242;
         }
 
-        /* Guarantee Section */
-        .guarantee-section {
-            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
-            color: white;
-            padding: 60px 20px;
+        .verse-reference {
+            text-align: right;
+            font-weight: 600;
+            color: #FF6F00;
+            font-style: normal;
+        }
+
+        .values-section {
+            background: #F5F5F5;
+            border-top: 1px solid rgba(255, 179, 0, 0.2);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-item {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+            gap: 2rem;
+            padding: 2rem;
+            border: 1px solid rgba(255, 179, 0, 0.25);
+            background: #FFFFFF;
+            transition: all 0.3s;
+        }
+
+        .value-item:hover {
+            border-color: rgba(255, 179, 0, 0.5);
+            background: rgba(255, 179, 0, 0.05);
+            transform: translateX(5px);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 0.5rem;
+        }
+
+        .value-item h3 {
+            color: #424242;
+        }
+
+        .value-item p {
+            color: rgba(66, 66, 66, 0.85);
+            font-weight: 300;
+        }
+
+        .legacy-section {
+            background: linear-gradient(135deg, #FFF3CC 0%, #FFF9E6 100%);
+            border-top: 1px solid rgba(255, 179, 0, 0.3);
+        }
+
+        .legacy-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legacy-content p {
+            color: #424242;
+        }
+
+        .legacy-statement {
+            font-size: 1.3rem;
+            line-height: 2;
+            margin: 3rem 0;
+            padding: 2rem;
+            border: 1px solid rgba(255, 179, 0, 0.4);
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 4px;
+            font-weight: 300;
+            color: #424242;
+        }
+
+        .commitment-section {
+            background: #F5F5F5;
+            border-top: 1px solid rgba(255, 179, 0, 0.2);
+        }
+
+        .commitment-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .commitment-card {
+            padding: 3rem 2rem;
+            border: 1px solid rgba(33, 150, 243, 0.25);
+            background: #FFFFFF;
+            transition: all 0.3s;
+        }
+
+        .commitment-card:hover {
+            border-color: rgba(33, 150, 243, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(33, 150, 243, 0.15);
+        }
+
+        .commitment-card p {
+            color: #424242;
+        }
+
+        .contact-section {
+            background: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 100%);
+            border-top: 1px solid rgba(33, 150, 243, 0.3);
             text-align: center;
         }
 
-        .guarantee-badge {
-            width: 150px;
-            height: 150px;
-            background: #FFD700;
-            border-radius: 50%;
-            margin: 0 auto 30px;
+        .contact-info {
+            max-width: 600px;
+            margin: 3rem auto;
+            font-size: 1.1rem;
+            font-weight: 300;
+        }
+
+        .contact-info p {
+            color: #424242;
+        }
+
+        .social-links {
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-size: 2em;
-            font-weight: bold;
-            color: #333;
-            box-shadow: 0 10px 30px rgba(255,215,0,0.4);
+            gap: 3rem;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid rgba(33, 150, 243, 0.3);
         }
 
-        /* Footer */
+        .social-link {
+            color: #424242;
+            text-decoration: none;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            font-weight: 400;
+            position: relative;
+        }
+
+        .social-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #2196F3, #9C27B0);
+            transition: width 0.3s;
+        }
+
+        .social-link:hover {
+            color: #2196F3;
+        }
+
+        .social-link:hover::after {
+            width: 100%;
+        }
+
         footer {
-            background: #333;
-            color: white;
-            padding: 40px 20px;
+            background: #F5F5F5;
+            padding: 3rem 2rem;
             text-align: center;
+            border-top: 1px solid rgba(33, 150, 243, 0.2);
         }
 
-        /* Floating CTA */
-        .floating-cta {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 999;
-            animation: float 3s ease-in-out infinite;
+        footer p {
+            color: rgba(66, 66, 66, 0.7);
         }
 
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-        }
-
-        /* Mobile Responsive */
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2em;
-            }
-
-            .hero p {
-                font-size: 1.1em;
-            }
-
-            .cta-button {
-                padding: 15px 30px;
-                font-size: 1.1em;
-            }
-
-            .price-new {
-                font-size: 3em;
-            }
-
-            .popup-content {
-                padding: 30px 20px;
-                margin: 20px;
-            }
-
-            .exit-content {
-                padding: 30px 20px;
-                margin: 20px;
-            }
+            .new-name { font-size: 3rem; letter-spacing: 6px; }
+            .hero h1 { font-size: 1.5rem; }
+            h2 { font-size: 2rem; }
+            .manifesto-grid { grid-template-columns: 1fr; }
+            .value-item { grid-template-columns: 1fr; }
+            .commitment-grid { grid-template-columns: 1fr; }
+            section { padding: 4rem 1.5rem; }
         }
 
-        /* Animation for scroll reveal */
-        .reveal {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: all 0.6s ease;
-        }
-
-        .reveal.active {
-            opacity: 1;
-            transform: translateY(0);
+        .emphasis {
+            color: #2196F3;
+            font-weight: 600;
         }
     </style>
 </head>
 <body>
-    <!-- Social Proof Bar -->
-    <div class="social-proof-bar">
-        🔥 <span id="live-counter">247</span> pessoas estão vendo esta oferta agora! ⏰ Vagas limitadas!
-    </div>
-
-    <!-- Email Capture Popup -->
-    <div class="email-popup" id="emailPopup">
-        <div class="popup-content">
-            <span class="popup-close" onclick="closeEmailPopup()">&times;</span>
-            <h3>🎁 Espere! Presente Especial Para Você!</h3>
-            <p>Deixe seu melhor e-mail e ganhe <strong>GRÁTIS</strong> um e-book exclusivo com:</p>
-            <div class="popup-bonus">
-                📚 10 Receitas Fit Bônus<br>
-                💡 5 Dicas para Acelerar o Metabolismo<br>
-                📋 Checklist de Compras Saudáveis
-            </div>
-            <form class="email-form" onsubmit="captureEmail(event)">
-                <input type="text" placeholder="Seu Nome" required id="popup-name">
-                <input type="email" placeholder="Seu Melhor E-mail" required id="popup-email">
-                <button type="submit">QUERO MEU PRESENTE GRÁTIS!</button>
-            </form>
-            <p style="font-size: 0.8em; margin-top: 15px; color: #999;">
-                🔒 Seus dados estão 100% seguros
-            </p>
-        </div>
-    </div>
-
-    <!-- Exit Intent Popup -->
-    <div class="exit-popup" id="exitPopup">
-        <div class="exit-content">
-            <span class="popup-close" onclick="closeExitPopup()" style="color: white;">&times;</span>
-            <h2>⚠️ ESPERE! NÃO VAMOS DEIXAR VOCÊ IR ASSIM...</h2>
-            <p style="font-size: 1.3em;">Aqui está um desconto EXCLUSIVO só pra você:</p>
-            <div class="discount">CUPOM: VIP10</div>
-            <p style="font-size: 1.5em; margin-bottom: 30px;">
-                <strong>-10% ADICIONAL</strong><br>
-                (Use no checkout)
-            </p>
-            <a href="#comprar" class="cta-button" style="background: #FFD700; color: #333;" onclick="applyDiscount()">
-                APROVEITAR DESCONTO AGORA
-            </a>
-            <p style="font-size: 0.9em; margin-top: 20px; opacity: 0.9;">
-                ⏰ Este cupom expira em 15 minutos!
-            </p>
-        </div>
-    </div>
-
-    <!-- WhatsApp Group Notification -->
-    <div class="whatsapp-notification" id="whatsappNotif">
-        <span class="whatsapp-close" onclick="closeWhatsApp()">&times;</span>
-        <strong>💬 Grupo VIP no WhatsApp!</strong>
-        <p style="margin: 10px 0; font-size: 0.9em;">
-            Entre para nossa comunidade exclusiva com suporte diário e dicas extras!
-        </p>
-        <div style="text-align: center; margin-top: 15px;">
-            <strong>🎁 Bônus: Cardápio Semanal Grátis</strong>
-        </div>
-    </div>
-
-    <!-- Hero Section with A/B Test -->
     <section class="hero">
-        <div class="hero-content container">
-            <div class="badge">✨ MÉTODO COMPROVADO - +10.000 PESSOAS TRANSFORMADAS</div>
+        <div class="hero-content">
+            <div class="logo-transition">
+                <div class="old-name">MOV</div>
+                <div class="transition-line"></div>
+                <div class="new-name">POR UM</div>
+            </div>
+            <h1>Uma Nova Identidade, O Mesmo Propósito</h1>
+            <p class="hero-subtitle">
+                Somos uma geração unida por um chamado, comprometida com uma missão, 
+                vivendo como um só corpo para a glória de Cristo
+            </p>
+            <div class="hero-verse">
+                "Esforçando-vos diligentemente por preservar a unidade do Espírito no vínculo da paz; 
+                há somente um corpo e um Espírito, como também fostes chamados numa só esperança da vossa vocação."
+                <br><strong>— Efésios 4:3-4</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="manifesto-section">
+        <div class="manifesto-intro">
+            <h2>O Manifesto Por Um</h2>
+            <div class="section-divider"></div>
+            <p style="font-size: 1.2rem; color: rgba(66,66,66,0.85); max-width: 700px; margin: 2rem auto; font-weight: 300;">
+                Mais do que um nome, <span class="emphasis">POR UM</span> é uma declaração de propósito. 
+                É o compromisso de uma geração que escolhe viver unida, lutar junta e avançar como um só corpo.
+            </p>
+        </div>
+
+        <div class="manifesto-grid">
+            <div class="manifesto-item">
+                <div class="manifesto-number">01</div>
+                <div class="manifesto-title">Por Uma Alma</div>
+                <p class="manifesto-text">
+                    Cada vida importa. Estamos dispostos a deixar as noventa e nove para buscar aquela 
+                    que se perdeu. Nosso compromisso é com cada jovem que ainda não conhece o amor de Cristo.
+                </p>
+            </div>
+
+            <div class="manifesto-item">
+                <div class="manifesto-number">02</div>
+                <div class="manifesto-title">Por Uma Geração</div>
+                <p class="manifesto-text">
+                    Somos chamados para impactar nossa geração. Não apenas os que estão dentro das 
+                    paredes da igreja, mas todos os jovens que Deus colocou ao nosso alcance.
+                </p>
+            </div>
+
+            <div class="manifesto-item">
+                <div class="manifesto-number">03</div>
+                <div class="manifesto-title">Por Um Propósito</div>
+                <p class="manifesto-text">
+                    Unidos pelo mesmo chamado: fazer discípulos de Cristo. Um propósito que nos 
+                    conecta, nos fortalece e nos direciona para além de nós mesmos.
+                </p>
+            </div>
+
+            <div class="manifesto-item">
+                <div class="manifesto-number">04</div>
+                <div class="manifesto-title">Por Um Corpo</div>
+                <p class="manifesto-text">
+                    Somos membros uns dos outros. A diversidade nos enriquece, mas a unidade nos 
+                    fortalece. Juntos, somos a expressão viva do corpo de Cristo.
+                </p>
+            </div>
+
+            <div class="manifesto-item">
+                <div class="manifesto-number">05</div>
+                <div class="manifesto-title">Por Um Reino</div>
+                <p class="manifesto-text">
+                    Nossa lealdade é ao Reino de Deus. Trabalhamos não para construir impérios pessoais, 
+                    mas para avançar o Reino eterno através de cada vida transformada.
+                </p>
+            </div>
+
+            <div class="manifesto-item">
+                <div class="manifesto-number">06</div>
+                <div class="manifesto-title">Por Um Legado</div>
+                <p class="manifesto-text">
+                    O que construímos hoje ecoará na eternidade. Vivemos com intencionalidade, 
+                    sabendo que cada decisão molda o legado que deixaremos para as próximas gerações.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="significance-section">
+        <div class="significance-content">
+            <h2>O Significado de Por Um</h2>
+            <div class="section-divider"></div>
+
+            <div class="significance-block">
+                <h3>A Essência da Unidade</h3>
+                <p>
+                    <span class="emphasis">POR UM</span> não é apenas um nome — é nossa identidade. 
+                    Expressa quem somos: jovens que escolheram viver em unidade, não por conveniência, 
+                    mas por convicção. A unidade pela qual Cristo orou em João 17 não é opcional; 
+                    é o testemunho mais poderoso que podemos dar ao mundo.
+                </p>
+            </div>
+
+            <div class="verse-block">
+                <p class="verse-text">
+                    "Para que todos sejam um, como Tu, ó Pai, o és em mim, e eu em Ti; 
+                    que também eles sejam um em nós, para que o mundo creia que Tu me enviaste."
+                </p>
+                <p class="verse-reference">— João 17:21</p>
+            </div>
+
+            <div class="significance-block">
+                <h3>O Poder da Comunhão</h3>
+                <p>
+                    Quando os irmãos vivem em união, ali o Senhor ordena a sua bênção. 
+                    <span class="emphasis">POR UM</span> representa nosso compromisso com a comunhão genuína — 
+                    não superficial, mas profunda; não institucional, mas relacional. Somos uma família 
+                    espiritual que caminha junta, chora junta, celebra junta e vence junta.
+                </p>
+            </div>
+
+            <div class="verse-block">
+                <p class="verse-text">
+                    "Oh! Quão bom e quão suave é que os irmãos vivam em união! 
+                    É como o óleo precioso sobre a cabeça... porque ali o Senhor ordena a bênção 
+                    e a vida para sempre."
+                </p>
+                <p class="verse-reference">— Salmos 133:1,3</p>
+            </div>
+
+            <div class="significance-block">
+                <h3>A Força do Propósito Compartilhado</h3>
+                <p>
+                    Quando todos pensamos a mesma coisa, temos o mesmo amor e somos unidos de alma, 
+                    tornamo-nos uma força imparável para o Reino. <span class="emphasis">POR UM</span> 
+                    declara que não estamos fragmentados em agendas individuais, mas alinhados sob um 
+                    mesmo propósito: ver vidas transformadas pelo evangelho de Jesus Cristo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="values-section">
+        <h2>Nossos Valores Fundamentais</h2>
+        <div class="section-divider"></div>
+        <p style="text-align: center; font-size: 1.1rem; color: rgba(66,66,66,0.85); margin-bottom: 3rem; font-weight: 300;">
+            Os princípios que guiam cada decisão, cada evento, cada relacionamento em <span class="emphasis">POR UM</span>
+        </p>
+
+        <div class="values-grid">
+            <div class="value-item">
+                <div class="value-icon">✟</div>
+                <div>
+                    <h3>Cristo como Centro</h3>
+                    <p style="margin-top: 1rem;">
+                        Tudo o que fazemos flui de nossa relação com Jesus. Ele não é um tema — 
+                        Ele é o fundamento, a razão e o objetivo de nossa existência como ministério.
+                    </p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">📖</div>
+                <div>
+                    <h3>Palavra como Autoridade</h3>
+                    <p style="margin-top: 1rem;">
+                        A Bíblia não é uma de nossas referências — é a nossa única regra de fé e prática. 
+                        Cada decisão, ensinamento e direção é submetida à autoridade das Escrituras.
+                    </p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">🤝</div>
+                <div>
+                    <h3>Unidade como Testemunho</h3>
+                    <p style="margin-top: 1rem;">
+                        Nossa unidade não é negociável. Protegemos a paz, celebramos a diversidade e 
+                        trabalhamos incansavelmente para preservar o vínculo que nos une em Cristo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">🔥</div>
+                <div>
+                    <h3>Excelência como Adoração</h3>
+                    <p style="margin-top: 1rem;">
+                        Fazemos tudo como para o Senhor. Excelência não é perfeccionismo — é o compromisso 
+                        de dar o melhor de nós em cada detalhe, porque servimos a um Deus de excelência.
+                    </p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">💙</div>
+                <div>
+                    <h3>Amor como Identidade</h3>
+                    <p style="margin-top: 1rem;">
+                        Seremos conhecidos pelo amor que demonstramos uns pelos outros e pelo mundo. 
+                        Amor que acolhe, que confronta em graça, que serve sem esperar retorno.
+                    </p>
+                </div>
+            </div>
+
+            <div class="value-item">
+                <div class="value-icon">🌍</div>
+                <div>
+                    <h3>Missão como Essência</h3>
+                    <p style="margin-top: 1rem;">
+                        Não existimos para nós mesmos. Somos um ministério voltado para fora, 
+                        comprometido em alcançar, discipular e enviar jovens para todas as esferas da sociedade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="legacy-section">
+        <div class="legacy-content">
+            <h2>Do MOV ao Por Um: Uma Continuidade</h2>
+            <div class="section-divider" style="margin-left: auto; margin-right: auto;"></div>
             
-            <!-- Headline A (Original) -->
-            <div class="ab-test-headline active" id="headlineA">
-                <h1>Emagreça até 5kg em 30 Dias<br>Comendo Delicioso!</h1>
-                <p>30 receitas práticas, saborosas e econômicas que vão transformar seu corpo sem passar fome</p>
-            </div>
-            
-            <!-- Headline B (Teste) -->
-            <div class="ab-test-headline" id="headlineB">
-                <h1>Descubra o Segredo de Emagrecer<br>Sem Passar Fome!</h1>
-                <p>O guia completo com 30 receitas deliciosas que estão mudando milhares de vidas</p>
-            </div>
-            
-            <a href="#comprar" class="cta-button" onclick="trackCTA('hero')">QUERO EMAGRECER AGORA</a>
-            <div class="guarantee">🔒 Compra 100% Segura | 💳 Garantia de 7 Dias | ⭐ 4.9/5.0 (2.847 avaliações)</div>
-        </div>
-    </section>
-
-    <!-- Problem Section -->
-    <section class="problem">
-        <div class="container">
-            <h2>Você Está Cansada(o) de...</h2>
-            <div class="problem-grid reveal">
-                <div class="problem-card">
-                    <div class="problem-icon">😩</div>
-                    <h3>Dietas Sem Graça</h3>
-                    <p>Que fazem você desistir em 3 dias e voltar aos velhos hábitos</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">😫</div>
-                    <h3>Passar Fome</h3>
-                    <p>Ter vontade de comer doce o dia todo e sofrer com a restrição</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">💸</div>
-                    <h3>Gastar Muito</h3>
-                    <p>Uma fortuna em marmitas prontas e produtos "fit" caros</p>
-                </div>
-                <div class="problem-card">
-                    <div class="problem-icon">🙅</div>
-                    <h3>Receitas Complicadas</h3>
-                    <p>Que tomam horas e usam ingredientes impossíveis de encontrar</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Video Section (Opcional - VSL) -->
-    <section class="video-section">
-        <div class="container">
-            <h2>🎥 Assista e Descubra Como Funciona</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px; color: #666;">
-                Veja depoimentos reais e receitas sendo preparadas
+            <p style="font-size: 1.2rem; margin: 2rem 0; font-weight: 300;">
+                O nome mudou, mas nossa história continua. Cada momento vivido como MOV 
+                foi um degrau que nos trouxe até aqui.
             </p>
-            <div class="video-container">
-                <!-- Substitua pelo seu vídeo do YouTube/Vimeo -->
-                <iframe src="https://www.youtube.com/embed/SEU_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
-    </section>
 
-    <!-- Solution Section -->
-    <section class="solution">
-        <div class="container">
-            <h2>A Solução Que Você Esperava!</h2>
-            <p class="solution-subtitle">Emagreça de forma saudável sem abrir mão do sabor</p>
-            
-            <div class="benefits-grid reveal">
-                <div class="benefit-card">
-                    <h3>✅ 30 Receitas Deliciosas</h3>
-                    <p>Pratos que toda a família vai querer experimentar. Nada de comida sem graça!</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>⚡ Super Rápidas</h3>
-                    <p>Preparo entre 15-30 minutos. Ideal para quem tem rotina corrida!</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>💰 Econômicas</h3>
-                    <p>Maioria das porções custa menos de R$15. Ingredientes fáceis de encontrar!</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>🎯 Calorias Controladas</h3>
-                    <p>Porções entre 300-500 calorias, facilitando o déficit calórico</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>🥗 Nutritivas & Balanceadas</h3>
-                    <p>Combinação perfeita de proteínas, carboidratos saudáveis e vitaminas</p>
-                </div>
-                <div class="benefit-card">
-                    <h3>📱 Guia Completo</h3>
-                    <p>Lista de compras, cardápio de 7 dias e dicas de ouro para emagrecer</p>
-                </div>
+            <div class="legacy-statement">
+                Honramos nosso passado. Celebramos cada culto, cada célula, cada vida transformada. 
+                As lágrimas de alegria, as orações respondidas, os relacionamentos construídos — 
+                nada se perde. Tudo permanece como fundação do que estamos nos tornando.
+                <br><br>
+                <span class="emphasis">POR UM</span> não nega o MOV; <span class="emphasis">POR UM</span> é o MOV amadurecido, 
+                clarificado, direcionado. É a mesma paixão com mais foco. A mesma fé com mais fundamento. 
+                O mesmo amor com mais profundidade.
             </div>
-        </div>
-    </section>
 
-    <!-- Results Section -->
-    <section class="results">
-        <div class="container">
-            <h2>Resultados Que Você Pode Esperar</h2>
-            <div class="stats-grid reveal">
-                <div class="stat-card">
-                    <div class="stat-number">3-5kg</div>
-                    <div>Perda de Peso em 30 Dias</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">30</div>
-                    <div>Receitas Testadas</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">15min</div>
-                    <div>Tempo Médio de Preparo</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">R$15</div>
-                    <div>Custo Médio por Refeição</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Bonus Section -->
-  <!-- <section class="bonus">
-        <div class="container">
-            <h2>🎁 Bônus Exclusivos (Valor: R$297)</h2>
-            <div class="bonus-grid reveal">
-                <div class="bonus-card">
-                    <h3>📋 Lista de Compras Semanal</h3>
-                    <p>Planejamento completo para economizar tempo e dinheiro no supermercado</p>
-                    <strong>Valor: R$47</strong>
-                </div>
-                <div class="bonus-card">
-                    <h3>📅 Cardápio de 7 Dias</h3>
-                    <p>Café, almoço, jantar e lanches totalmente planejados para você</p>
-                    <strong>Valor: R$97</strong>
-                </div>
-                <div class="bonus-card">
-                    <h3>💡 10 Dicas de Ouro</h3>
-                    <p>Estratégias comprovadas para acelerar seus resultados</p>
-                    <strong>Valor: R$67</strong>
-                </div>
-                <div class="bonus-card">
-                    <h3>🎯 Metas Semanais</h3>
-                    <p>Sistema de acompanhamento para manter você motivada(o)</p>
-                    <strong>Valor: R$86</strong>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Community Section -->
-    <section class="community">
-        <div class="container">
-            <h2>💬 Grupo VIP no WhatsApp</h2>
-            <p style="font-size: 1.3em; margin-bottom: 30px;">
-                Faça parte de uma comunidade exclusiva de pessoas transformando suas vidas!
-            </p>
-            <div class="community-benefits">
-                <div class="community-benefit">
-                    <h3>👥 Suporte Diário</h3>
-                    <p>Tire dúvidas e receba orientações todos os dias</p>
-                </div>
-                <div class="community-benefit">
-                    <h3>🎁 Receitas Extras</h3>
-                    <p>Toda semana novas receitas exclusivas do grupo</p>
-                </div>
-                <div class="community-benefit">
-                    <h3>🏆 Desafios & Prêmios</h3>
-                    <p>Participe de desafios mensais e ganhe prêmios</p>
-                </div>
-                <div class="community-benefit">
-                    <h3>💪 Motivação Diária</h3>
-                    <p>Histórias inspiradoras de quem está conquistando resultados</p>
-                </div>
-            </div>
-            <a href="#comprar" class="cta-button" style="background: white; color: #25D366;">
-                QUERO ENTRAR NO GRUPO VIP
-            </a>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2>⭐ O Que Dizem Quem Já Transformou</h2>
-            <div class="testimonial-grid reveal">
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Perdi 4kg no primeiro mês e o melhor: comendo gostoso! As receitas são realmente práticas e minha família adora."</p>
-                    <div class="testimonial-name">- Maria Silva, 34 anos</div>
-                    <div class="testimonial-verified">✓ Compra Verificada</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Finalmente uma dieta que não parece dieta! Gastei muito menos que com marmitas prontas e os resultados apareceram rápido."</p>
-                    <div class="testimonial-name">- João Santos, 41 anos</div>
-                    <div class="testimonial-verified">✓ Compra Verificada</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"O guia mudou minha relação com a comida. Aprendi a comer melhor sem sofrimento. Já são 7kg a menos!"</p>
-                    <div class="testimonial-name">- Ana Paula, 28 anos</div>
-                    <div class="testimonial-verified">✓ Compra Verificada</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"As receitas são tão boas que meu marido nem percebeu que estava comendo 'comida de dieta'. Perdemos peso juntos!"</p>
-                    <div class="testimonial-name">- Carla Rodrigues, 38 anos</div>
-                    <div class="testimonial-verified">✓ Compra Verificada</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Nunca pensei que emagrecer pudesse ser tão fácil. O grupo VIP me ajuda a manter a motivação todos os dias!"</p>
-                    <div class="testimonial-name">- Ricardo Alves, 45 anos</div>
-                    <div class="testimonial-verified">✓ Compra Verificada</div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Melhor investimento que fiz em mim mesma. Em 2 meses já perdi 9kg e me sinto incrível!"</p>
-                    <div class="testimonial-name">- Juliana Costa, 29 anos</div>
-                    <div class="testimonial-verified">✓ Compra Verificada</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Urgency Section -->
-    <section class="urgency">
-        <div class="container">
-            <h2>⏰ Oferta Por Tempo Limitado!</h2>
-            <p style="font-size: 1.2em; margin-bottom: 10px;">Esta promoção expira em:</p>
-            <div class="countdown">
-                <div class="countdown-item">
-                    <div class="countdown-number" id="hours">23</div>
-                    <div class="countdown-label">Horas</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="minutes">59</div>
-                    <div class="countdown-label">Minutos</div>
-                </div>
-                <div class="countdown-item">
-                    <div class="countdown-number" id="seconds">59</div>
-                    <div class="countdown-label">Segundos</div>
-                </div>
-            </div>
-            <p style="font-size: 1.1em; margin-top: 30px;">
-                ⚠️ Após este prazo, o preço volta para <strong>R$197</strong>
+            <p style="font-size: 1.1rem; margin-top: 3rem; font-weight: 300;">
+                A mudança de nome não é uma ruptura — é uma revelação. 
+                É a manifestação externa do que sempre fomos internamente: 
+                <br><br>
+                <strong style="font-size: 1.3rem; color: #2196F3;">Um corpo. Um espírito. Um Senhor. Um propósito.</strong>
             </p>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section class="pricing" id="comprar">
-        <div class="container">
-            <h2>💳 Investimento Único e Especial</h2>
-            <div class="price-card reveal">
-                <p>De <span class="price-old">R$ 197,00</span></p>
-                <div>Por apenas</div>
-                <div class="price-new">R$ 69,98</div>
-                <div class="price-installments">ou 12x de R$ 5,83</div>
-                <a href="https://pay.hotmart.com/SEU-LINK-AQUI" class="cta-button" style="background: #FFD700; color: #333;" onclick="trackPurchase()">
-                    COMEÇAR MINHA TRANSFORMAÇÃO AGORA
-                </a>
-                <p style="margin-top: 20px; font-size: 0.9em;">✅ Acesso imediato após confirmação do pagamento</p>
-                <p style="font-size: 0.9em;">✅ Garantia incondicional de 7 dias</p>
-                <p style="font-size: 0.9em;">✅ Acesso ao Grupo VIP no WhatsApp</p>
-                <p style="font-size: 0.9em;">✅ Todos os bônus incluídos (Valor: R$297)</p>
-                
-                <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 10px;">
-                    <p style="font-size: 1.1em; margin-bottom: 10px;"><strong>🎁 BÔNUS ESPECIAL:</strong></p>
-                    <p>Quem comprar hoje ganha acesso VITALÍCIO ao grupo VIP e atualizações gratuitas!</p>
-                </div>
+    <section class="commitment-section">
+        <h2>Nosso Compromisso</h2>
+        <div class="section-divider"></div>
+
+        <div class="commitment-grid">
+            <div class="commitment-card">
+                <h3 style="color: #2196F3; margin-bottom: 1.5rem; font-weight: 500;">Missão</h3>
+                <p style="font-size: 1.05rem; font-weight: 300;">
+                    Alcançar jovens com o evangelho de Jesus Cristo, discipulá-los na Palavra 
+                    e equipá-los para viverem plenamente o propósito de Deus, transformando 
+                    suas famílias, comunidades e sociedade através do amor e da verdade.
+                </p>
+            </div>
+
+            <div class="commitment-card">
+                <h3 style="color: #2196F3; margin-bottom: 1.5rem; font-weight: 500;">Visão</h3>
+                <p style="font-size: 1.05rem; font-weight: 300;">
+                    Ser uma geração de jovens radicalmente comprometidos com Cristo, 
+                    vivendo em unidade como um só corpo, impactando o Brasil e as nações 
+                    com o Reino de Deus através de relacionamentos genuínos e discipulado intencional.
+                </p>
+            </div>
+
+            <div class="commitment-card">
+                <h3 style="color: #2196F3; margin-bottom: 1.5rem; font-weight: 500;">Estratégia</h3>
+                <p style="font-size: 1.05rem; font-weight: 300;">
+                    Células de vida: pequenos grupos onde relacionamentos profundos são cultivados.
+                    <br><br>
+                    Cultos de celebração: momentos de adoração corporativa e ensino fundamentado.
+                    <br><br>
+                    Discipulado um a um: investimento pessoal na formação de discípulos que fazem discípulos.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Guarantee Section -->
-    <section class="guarantee-section">
-        <div class="container">
-            <div class="guarantee-badge">7 DIAS</div>
-            <h2>🛡️ Garantia Total de Satisfação</h2>
-            <p style="font-size: 1.2em; max-width: 700px; margin: 20px auto;">
-                Você tem 7 dias para testar o guia completo. Se por qualquer motivo não ficar satisfeita(o), 
-                devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia.
+    <section class="contact-section">
+        <h2>Faça Parte de Por Um</h2>
+        <div class="section-divider" style="margin-left: auto; margin-right: auto;"></div>
+
+        <div class="contact-info">
+            <p style="margin-bottom: 2rem;">
+                Esta é uma jornada que não fazemos sozinhos. <span class="emphasis">POR UM</span> 
+                é formado por pessoas — pessoas reais, com histórias reais, servindo a um Deus real.
             </p>
-            <p style="font-size: 1.1em; margin-top: 20px;">
-                <strong>O risco é todo nosso!</strong>
+            <p style="margin-bottom: 2rem;">
+                Se você é jovem e busca uma comunidade onde possa crescer na fé, servir com propósito 
+                e fazer parte de algo maior que você mesmo, este é o seu lugar.
             </p>
+            <p style="font-size: 1.2rem; font-weight: 600; color: #2196F3;">
+                Juntos, somos mais fortes. Juntos, avançamos. Juntos, somos POR UM.
+            </p>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-link">Instagram</a>
+            <a href="#" class="social-link">YouTube</a>
+            <a href="#" class="social-link">WhatsApp</a>
         </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section class="faq">
-        <div class="container">
-            <h2>❓ Perguntas Frequentes</h2>
-            <div class="faq-container reveal">
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Como recebo o guia após a compra? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Você receberá o acesso imediato por e-mail logo após a confirmação do pagamento. O material é 100% digital em PDF, podendo ser acessado de qualquer dispositivo.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        As receitas são realmente fáceis de fazer? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Sim! A maioria leva entre 15-30 minutos e usa ingredientes comuns que você encontra em qualquer supermercado. Tudo explicado passo a passo com fotos.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Preciso ter conhecimento de nutrição? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Não! O guia é feito para pessoas comuns. Tudo está explicado de forma simples e prática. Não precisa ser expert em cozinha ou nutrição.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Funciona para vegetarianos? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Sim! O guia tem receitas vegetarianas identificadas com ícones específicos. Há opções para todos os tipos de alimentação.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Como funciona o Grupo VIP no WhatsApp? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Após a compra, você recebe o link de acesso ao grupo exclusivo. Lá você terá suporte diário, receitas extras, desafios e uma comunidade motivadora.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        E se eu não gostar do guia? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Você tem 7 dias de garantia incondicional. Se não gostar por qualquer motivo, basta enviar um e-mail e devolvemos 100% do valor investido.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Posso imprimir o guia? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Sim! O PDF pode ser impresso para você consultar na cozinha enquanto prepara as receitas.
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">
-                        Tem suporte caso eu tenha dúvidas? ▼
-                    </div>
-                    <div class="faq-answer">
-                        Sim! Além do grupo VIP no WhatsApp, você pode entrar em contato conosco por e-mail. Respondemos em até 24h.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Final CTA -->
-    <section class="hero" style="padding: 60px 20px;">
-        <div class="container">
-            <h2 style="font-size: 2.5em; margin-bottom: 20px;">🚀 Sua Transformação Começa HOJE!</h2>
-            <p style="font-size: 1.2em; margin-bottom: 30px;">
-                Não deixe para depois. Cada dia que passa é uma oportunidade perdida de se sentir melhor consigo mesma(o).
-            </p>
-            <a href="#comprar" class="cta-button" onclick="trackCTA('final')">SIM, EU QUERO TRANSFORMAR MEU CORPO AGORA</a>
-            <p style="margin-top: 20px; font-size: 0.9em;">🔒 Ambiente 100% Seguro | ✅ Garantia de 7 Dias | 💳 Parcelamento sem juros</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 30 Receitas Fit Deliciosas. Todos os direitos reservados.</p>
-            <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">
-                Este produto não substitui orientação médica ou nutricional profissional.
-            </p>
-            <div style="margin-top: 20px;">
-                <a href="#" style="color: white; margin: 0 10px;">Termos de Uso</a>
-                <a href="#" style="color: white; margin: 0 10px;">Política de Privacidade</a>
-                <a href="#" style="color: white; margin: 0 10px;">Contato</a>
-            </div>
-        </div>
+        <p style="opacity: 0.6; font-size: 0.9rem;">
+            © 2025 Por Um — Ministério de Jovens<br>
+            Uma nova identidade. O mesmo propósito. Um só corpo em Cristo.
+        </p>
     </footer>
-
-    <!-- Floating CTA Button -->
-    <div class="floating-cta">
-        <a href="#comprar" class="cta-button" style="font-size: 1em; padding: 15px 30px;" onclick="trackCTA('floating')">
-            COMPRAR AGORA
-        </a>
-    </div>
-
-    <script>
-        // ========== CONFIGURAÇÕES ==========
-        const config = {
-            hotmartLink: '#comprar', // Quando tiver o link, substitua aqui
-            whatsappNumber: '5511944843932',
-            whatsappMessage: 'Olá! Quero saber mais sobre o Guia 30 Receitas Fit Deliciosas! 😊',
-            emailCaptureAPI: '', // Vamos configurar depois
-            pixelFacebook: '', // Adicione quando criar o pixel
-            trackingGA: '' // Adicione quando criar o GA
-        };
-
-        // ========== A/B TESTING ==========
-        function initABTest() {
-            const testVariant = Math.random() < 0.5 ? 'A' : 'B';
-            localStorage.setItem('abTestVariant', testVariant);
-            
-            if (testVariant === 'B') {
-                document.getElementById('headlineA').classList.remove('active');
-                document.getElementById('headlineB').classList.add('active');
-            }
-            
-            // Track variant
-            if (typeof gtag !== 'undefined') {
-                gtag('event', 'ab_test_view', {
-                    'variant': testVariant
-                });
-            }
-        }
-
-        // ========== EMAIL CAPTURE POPUP ==========
-        let emailCaptured = localStorage.getItem('emailCaptured');
-        
-        function showEmailPopup() {
-            if (!emailCaptured) {
-                setTimeout(() => {
-                    document.getElementById('emailPopup').classList.add('active');
-                    trackEvent('popup_shown', 'email_capture');
-                }, 15000); // Mostra após 15 segundos
-            }
-        }
-
-        function closeEmailPopup() {
-            document.getElementById('emailPopup').classList.remove('active');
-        }
-
-        async function captureEmail(event) {
-        event.preventDefault();
-        
-        const name = document.getElementById('popup-name').value;
-        const email = document.getElementById('popup-email').value;
-        
-        // IDs dos campos do Google Form (substitua pelos seus!)
-        const FORM_ID = '1FAIpQLSd3n20rPVs2iIaZVhX4UQyXD8HOATc1020GOYUaW2F4NHvJjw';
-        const NAME_ENTRY = 'entry.1157095377'; // Substitua pelo ID real
-        const EMAIL_ENTRY = 'entry.904628797'; // Substitua pelo ID real
-        
-        const formUrl = `https://docs.google.com/forms/d/e/${FORM_ID}/formResponse`;
-        const formData = new FormData();
-        formData.append(NAME_ENTRY, name);
-        formData.append(EMAIL_ENTRY, email);
-        
-        try {
-            await fetch(formUrl, {
-                method: 'POST',
-                body: formData,
-                mode: 'no-cors' // Importante!
-            });
-            
-            localStorage.setItem('emailCaptured', 'true');
-            closeEmailPopup();
-            alert('✅ E-mail cadastrado! Verifique sua caixa de entrada para receber o presente.');
-            trackEvent('email_captured', 'popup');
-        } catch (error) {
-            console.error('Erro:', error);
-            alert('⚠️ Erro ao cadastrar. Tente novamente.');
-        }
-    }
-
-        // ========== EXIT INTENT ==========
-        let exitIntentShown = false;
-        
-        document.addEventListener('mouseleave', (e) => {
-            if (e.clientY <= 0 && !exitIntentShown && !emailCaptured) {
-                document.getElementById('exitPopup').classList.add('active');
-                exitIntentShown = true;
-                trackEvent('exit_intent_shown', 'popup');
-            }
-        });
-
-        function closeExitPopup() {
-            document.getElementById('exitPopup').classList.remove('active');
-        }
-
-        function applyDiscount() {
-            alert('🎉 Cupom VIP10 será aplicado automaticamente no checkout!');
-            closeExitPopup();
-            trackEvent('discount_applied', 'exit_intent');
-        }
-
-        // ========== WHATSAPP NOTIFICATION ==========
-        function showWhatsAppNotif() {
-            setTimeout(() => {
-                document.getElementById('whatsappNotif').classList.add('show');
-                trackEvent('whatsapp_notif_shown', 'notification');
-            }, 30000); // Mostra após 30 segundos
-        }
-
-        function closeWhatsApp() {
-            document.getElementById('whatsappNotif').classList.remove('show');
-        }
-
-        // Redirecionar para WhatsApp ao clicar
-        document.getElementById('whatsappNotif').addEventListener('click', function(e) {
-            if (e.target.className !== 'whatsapp-close') {
-                window.open('https://wa.me/5511944843932?text=Olá! Quero entrar no grupo VIP', '_blank');
-                trackEvent('whatsapp_group_click', 'notification');
-            }
-        });
-
-        // ========== COUNTDOWN TIMER ==========
-        function updateCountdown() {
-            const now = new Date();
-            const midnight = new Date();
-            midnight.setHours(24, 0, 0, 0);
-            
-            const diff = midnight - now;
-            
-            const hours = Math.floor(diff / (1000 * 60 * 60));
-            const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-            
-            document.getElementById('hours').textContent = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').textContent = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').textContent = seconds.toString().padStart(2, '0');
-        }
-        
-        setInterval(updateCountdown, 1000);
-        updateCountdown();
-
-        // ========== LIVE COUNTER ==========
-        function updateLiveCounter() {
-            const counter = document.getElementById('live-counter');
-            const baseCount = 247;
-            const variation = Math.floor(Math.random() * 20) - 10;
-            counter.textContent = baseCount + variation;
-        }
-        
-        setInterval(updateLiveCounter, 5000);
-
-        // ========== FAQ TOGGLE ==========
-        function toggleFaq(element) {
-            const answer = element.nextElementSibling;
-            const allAnswers = document.querySelectorAll('.faq-answer');
-            
-            allAnswers.forEach(item => {
-                if (item !== answer) {
-                    item.classList.remove('active');
-                }
-            });
-            
-            answer.classList.toggle('active');
-        }
-
-        // ========== SCROLL REVEAL ==========
-        function reveal() {
-            const reveals = document.querySelectorAll('.reveal');
-            
-            for (let i = 0; i < reveals.length; i++) {
-                const windowHeight = window.innerHeight;
-                const elementTop = reveals[i].getBoundingClientRect().top;
-                const elementVisible = 150;
-                
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add('active');
-                }
-            }
-        }
-        
-        window.addEventListener('scroll', reveal);
-        reveal();
-
-        // ========== SMOOTH SCROLL ==========
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // ========== TRACKING FUNCTIONS ==========
-        function trackEvent(action, category) {
-            // Google Analytics
-            if (typeof gtag !== 'undefined') {
-                gtag('event', action, {
-                    'event_category': category,
-                    'event_label': window.location.pathname
-                });
-            }
-            
-            // Facebook Pixel
-            if (typeof fbq !== 'undefined') {
-                fbq('track', action);
-            }
-            
-            console.log('Event tracked:', action, category);
-        }
-
-        function trackCTA(location) {
-            trackEvent('cta_click', location);
-        }
-
-        function trackPurchase() {
-            trackEvent('initiate_checkout', 'purchase');
-            
-            // Facebook Pixel - Purchase Intent
-            if (typeof fbq !== 'undefined') {
-                fbq('track', 'InitiateCheckout', {
-                    value: 47.00,
-                    currency: 'BRL'
-                });
-            }
-        }
-
-        // ========== REMARKETING PIXEL ==========
-        function initRemarketingPixel() {
-            // Adicione aqui os pixels de remarketing do Google Ads, Facebook, etc.
-            trackEvent('page_view', 'landing_page');
-        }
-
-        // ========== INITIALIZE ==========
-        window.addEventListener('DOMContentLoaded', () => {
-            initABTest();
-            showEmailPopup();
-            showWhatsAppNotif();
-            initRemarketingPixel();
-        });
-
-        // ========== PREVENT RIGHT CLICK (Opcional) ==========
-        // document.addEventListener('contextmenu', event => event.preventDefault());
-    </script>
 </body>
 </html>
